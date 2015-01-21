@@ -82,7 +82,7 @@
 								</li>
 
 								<li>
-									<a href="jqgrid.html">
+									<a href="/showchart">
 										<i class="icon-double-angle-right"></i>
 										趋势分析
 									</a>
