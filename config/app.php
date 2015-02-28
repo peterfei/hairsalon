@@ -145,6 +145,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
+		'Zizaco\Entrust\EntrustServiceProvider',
 
 	],
 
@@ -194,6 +195,7 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 		'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
+		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
 
 	],
 

@@ -1,0 +1,733 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"emp",
+				"empInfo"
+			],
+			[
+				"sum",
+				"sum_cost"
+			],
+			[
+				"门",
+				"门店二"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"ass",
+				"assign	->assign"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"admin",
+				"admin_users_path"
+			],
+			[
+				"user",
+				"user_roles"
+			],
+			[
+				"lo",
+				"loginuser"
+			],
+			[
+				"ima",
+				"image_path"
+			],
+			[
+				"f",
+				"fun	function …"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"gs",
+				"Git: Status"
+			],
+			[
+				"gc",
+				"Git: Commit"
+			],
+			[
+				"gadd",
+				"Git: Add Current File"
+			],
+			[
+				"git sta",
+				"Git: Quick Status"
+			],
+			[
+				"gq",
+				"Git: Quick Commit"
+			],
+			[
+				"gad",
+				"Git: Add Current File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"gini",
+				"Git: Init"
+			],
+			[
+				"git:add",
+				"Git: Add..."
+			],
+			[
+				"git:comm",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"gitcomm",
+				"Git: Commit"
+			],
+			[
+				"gitcom",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"ali",
+				"Preferences: Alignment File Settings – Syntax Specific – User"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"gitco",
+				"Git: Commit"
+			],
+			[
+				"goto",
+				"Emmet: Go to Matching Pair"
+			],
+			[
+				"gitl",
+				"Git: Log All"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"ls",
+			"cd ..",
+			"choe",
+			"echo",
+			"dd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/liufei/php/Hairsalon"
+	],
+	"file_history":
+	[
+		"/Users/liufei/Downloads/简美资料/Bootstrap ACE后台管理界面模板/blank.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Index/main.html",
+		"/Library/WebServer/Documents/hairSys/App/Common/Conf/config.php.bak",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/MemberDetailController.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Member/member_edit.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Conf/config.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Index/login.html",
+		"/Library/WebServer/Documents/hairSys/hair.sql",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Cost/cost_list.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Member/member_list.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/MemberController.class.php",
+		"/Library/WebServer/Documents/hairSys/Libs/ThinkPHP/Library/Think/Log/Driver/File.class.php",
+		"/Library/WebServer/Documents/hairSys/Libs/ThinkPHP/Library/Think/Log/Driver/Sae.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Common/head.html",
+		"/Library/WebServer/Documents/hairSys/Public/static/js/jquery.1.8.3.min.js",
+		"/Library/WebServer/Documents/hairSys/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php",
+		"/Library/WebServer/Documents/hairSys/Libs/ThinkPHP/Library/Vendor/Smarty/plugins/function.html_image.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/CommonController.class.php",
+		"/Library/WebServer/Documents/hairSys/Public/static/js/Member/member.js",
+		"/Library/WebServer/Documents/hairSys/index.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Member/member.js",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Member/member_add.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Model/MenuModel.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Admin/member_edit.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/SubsriberController.class.php",
+		"/Library/WebServer/Documents/hairSys/Libs/ThinkPHP/Library/Think/Controller.class.php",
+		"/Library/WebServer/Documents/hairSys/Libs/ThinkPHP/Library/Think/View.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/System/menu_add.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Conf/config.php.bak",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Common/Dict/Setting.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Cost/cost_add.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Employee/employee_add.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Common/function.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/EmployeeController.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/CostController.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Model/MemberDetailModel.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Model/MemberModel.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Model/EmployeeModel.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Model/CostModel.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Model/IncomeModel.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/IncomeController.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Member/member_add_detail.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Employee/employee_list.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Cost",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/ContentController.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Setting/site.html",
+		"/Library/WebServer/Documents/hairSys/App/Admin/TagLib/EasyUI.class.php",
+		"/Library/WebServer/Documents/hairSys/Public/Runtime/Logs/14_12_16.log",
+		"/Library/WebServer/Documents/hairSys/App/Admin/View/Category/category_add.html",
+		"/Library/WebServer/Documents/hairSys/TODO.md",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/SettingController.class.php",
+		"/Library/WebServer/Documents/hairSys/App/Admin/Controller/CategoryController.class.php",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/self_drivings.css",
+		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/home.js.coffee",
+		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/select2_ext.js.coffee",
+		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/chosecity.js",
+		"/Users/liufei/ROR/gcr_web/app/controllers/home_controller.rb",
+		"/Users/liufei/ROR/gcr_web/app/views/self_drivings/choose_car.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/views/reservations/_form.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/views/self_drivings/_confirm.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/self_drivings.js.coffee",
+		"/Users/liufei/ROR/gcr_web/app/views/self_drivings/confirm.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/views/reservations/confirm.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/reservations.css",
+		"/Users/liufei/ROR/gcr_web/app/views/car_models/_index.html.slim",
+		"/Users/liufei/ROR/gcr_web/config/routes.rb",
+		"/Users/liufei/ROR/gcr_web/app/models/self_driving.rb",
+		"/Users/liufei/ROR/gcr_web/db/schema.rb",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/application.css.scss",
+		"/Users/liufei/ROR/gcr_web/app/views/layouts/application.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/we/application.js",
+		"/Users/liufei/ROR/gcr_web/app/helpers/application_helper.rb",
+		"/Users/liufei/ROR/gcr_web/app/controllers/application_controller.rb",
+		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/application.js",
+		"/Users/liufei/ROR/gcr_web/config/application.yml",
+		"/Users/liufei/ROR/gcr_web/config/application.rb",
+		"/Users/liufei/ROR/gcr_web/app/controllers/reservations_controller.rb",
+		"/Users/liufei/ROR/gcr_web/app/views/reservations/_form_partial.html.slim",
+		"/Users/liufei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/liufei/ROR/gcr_web/app/views/home/index.html.erb",
+		"/Users/liufei/ROR/gcr_web/app/views/layouts/_main_top.html.erb",
+		"/Users/liufei/ROR/gcr_web/app/views/reservations/_car_type.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/views/reservations/_car_type_rate.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/views/reservations/new.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/main.css",
+		"/Users/liufei/ROR/gcr_web/app/views/shared/_footer.html.erb",
+		"/Users/liufei/ROR/gcr_web/app/views/shared/_login_info.html.slim",
+		"/Users/liufei/ROR/gcr_web/app/views/user_sessions/create.js.erb",
+		"/Users/liufei/ROR/gcr_web/config.ru",
+		"/Users/liufei/ROR/gcr_web/tmp/cache/sass/4f43894c695d22ece13cd8a992a12fd428eed5a8/_hero-unit.scssc",
+		"/Users/liufei/ROR/gcr_web/app/inputs/hour_input.rb",
+		"/Users/liufei/ROR/gcr_web/app/models/reservation.rb",
+		"/Users/liufei/ROR/gcr_web/tmp/restart.txt",
+		"/Users/liufei/ROR/gcr_web/config/environments/test.rb",
+		"/Users/liufei/ROR/gcr_web/app/models/car_type_rate.rb",
+		"/Users/liufei/ROR/gcr_web/tmp/cache/sass/4f43894c695d22ece13cd8a992a12fd428eed5a8/_reset.scssc",
+		"/Users/liufei/ROR/gcr_web/config/initializers/simple_form.rb",
+		"/Users/liufei/ROR/gcr_web/spec/support/mailer_macros.rb",
+		"/Users/liufei/ROR/gcr_web/app/models/member.rb",
+		"/Users/liufei/Downloads/心霖公社选课系统要求.doc",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/global.css",
+		"/Users/liufei/ROR/gcr_web/config/database.yml",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/login.css",
+		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/index.css",
+		"/Users/liufei/ROR/duty/app/models/admin/user_role.rb",
+		"/Users/liufei/ROR/duty/app/models/user.rb",
+		"/Users/liufei/ROR/duty/app/models/admin/user.rb",
+		"/Users/liufei/ROR/duty/app/views/admin/users/_bar.html.slim",
+		"/Users/liufei/ROR/duty/app/views/admin/permissions/index.html.slim",
+		"/Users/liufei/ROR/duty/app/views/admin/users/index.html.slim",
+		"/Users/liufei/ROR/duty/Gemfile",
+		"/Users/liufei/ROR/duty/config/routes.rb",
+		"/Users/liufei/ROR/duty/app/views/admin/users/_form.html.slim",
+		"/Users/liufei/ROR/duty/app/controllers/users_controller.rb",
+		"/Users/liufei/ROR/duty/app/controllers/admin/roles_controller.rb",
+		"/Users/liufei/ROR/duty/db/seeds.rb",
+		"/Users/liufei/ROR/duty/app/models/admin/permission.rb",
+		"/Users/liufei/ROR/duty/app/views/admin/roles/index.html.slim",
+		"/Users/liufei/ROR/duty/app/views/admin/roles/show.html.slim",
+		"/Users/liufei/ROR/duty/app/helpers/application_helper.rb",
+		"/Users/liufei/ROR/duty/app/assets/javascripts/admin/roles.js.coffee",
+		"/Users/liufei/ROR/duty/app/views/admin/roles/grant.html.slim",
+		"/Users/liufei/ROR/duty/vendor/assets/stylesheets/style.css",
+		"/Users/liufei/ROR/duty/app/views/layouts/admin.html.slim",
+		"/Users/liufei/ROR/duty/config/initializers/assets.rb",
+		"/Users/liufei/ROR/duty/app/helpers/admin/sessions_helper.rb",
+		"/Users/liufei/ROR/duty/app/models/ability.rb",
+		"/Users/liufei/ROR/duty/app/models/admin/role.rb"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"",
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"net_state",
+			"$net_state",
+			"memberMemberListDelete",
+			"memberEditDialogFormSubmit",
+			"memberAdd",
+			"memberAddDialogFormSubmit",
+			"Category",
+			"category",
+			"member_add_dialog",
+			"category",
+			"category_db",
+			"Category",
+			"findEmp",
+			"Employee",
+			"employee",
+			"Employee",
+			"employee",
+			"Employee",
+			"employee",
+			"employee_db",
+			"member",
+			"Member",
+			"blance",
+			"Member",
+			"employeeListAdd",
+			"member",
+			"typelist",
+			"operateid",
+			"5px",
+			"console",
+			"location_select2",
+			"location",
+			"return_location",
+			"return_location_id",
+			"DD",
+			"dd",
+			"right_cont",
+			"tab-content",
+			"nav nav-tabs",
+			"special_requirements",
+			"wdj_order_right_sure_cont",
+			"self_driving_pay_mode",
+			"wdi_order_right_choose_condition",
+			"vefi",
+			"phone",
+			"l_col",
+			"l_column",
+			"images",
+			"down",
+			"and",
+			"client-update-info",
+			"images",
+			"220px",
+			"location_select2",
+			"location",
+			"zijia_cont",
+			"dl",
+			"images",
+			"cartype_item_opts_info",
+			"cartype_item_cont",
+			"images",
+			"cartype_item_div",
+			".cartype_item_div",
+			"car_type",
+			"pic_colum",
+			"active",
+			"left_colum",
+			"cartype_item_opts_order",
+			"self_driving",
+			"%>\n",
+			"images",
+			"images/",
+			"images",
+			"airport_select2",
+			"base_rate_code",
+			"form",
+			"home",
+			"time.png",
+			"left_side",
+			"images",
+			"<%",
+			"images",
+			"</li>",
+			"<li>",
+			"admin_user",
+			"pry",
+			"match",
+			"= f.input :roles do |rf|\n    - @roles.each do |role|\n      label.checkbox.inline\n        = check_box_tag 'user[user_roles_attributes][][role_id]', role.id, @admin_user.roles.include?(role)\n        = role.name",
+			"grant",
+			"class_name",
+			"../image/",
+			".row-fluid\n        /   .span6\n        /     #sample_1_info.dataTables_info Showing 1 to 5 of 25 entries\n        /   .span6\n        /     .dataTables_paginate.paging_bootstrap.pagination\n        /       ul\n        /         li.prev.disabled\n        /           a href=\"#\" \n        /             | ←\n        /             span.hidden-480 Prev\n        /         li.active\n        /           a href=\"#\"  1\n        /         li\n        /           a href=\"#\"  2\n        /         li\n        /           a href=\"#\"  3\n        /         li\n        /           a href=\"#\"  4\n        /         li\n        /           a href=\"#\"  5\n        /         li.next\n        /           a href=\"#\" \n        /             span.hidden-480 Next\n        /             | →",
+			"span",
+			"用户",
+			"sorting_1",
+			".checker",
+			"../image/",
+			"gritter-blue",
+			"../../img/",
+			"url(../../img",
+			"url(../../img/",
+			"url(\"../../img/",
+			"..\\/..\\/img\\/",
+			"../../img/",
+			"Admin::",
+			"h3",
+			"gritter",
+			"gritter-without-image",
+			"bootstrap",
+			"\"\",\"\"",
+			"dropdown",
+			"url(../images",
+			"../images/",
+			"../images",
+			"page",
+			"search-icon",
+			"search-ico",
+			"search-icon",
+			"sidebar",
+			"user",
+			"    \n",
+			"metro",
+			"|",
+			"peterfei",
+			"simple_search",
+			"keywords",
+			"#\n",
+			" "
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"url(/assets",
+			"url(assets",
+			"assets",
+			"###",
+			"####",
+			"##",
+			"PatientHome",
+			"assets/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.git-commit":
+	{
+		"height": 136.0
+	},
+	"output.git-init":
+	{
+		"height": 136.0
+	},
+	"project": "hairsalon.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"file",
+				"Libs/ThinkPHP/Library/Think/Log/Driver/File.class.php"
+			],
+			[
+				"member",
+				"App/Admin/View/Member/member_list.html"
+			],
+			[
+				"main",
+				"app/assets/stylesheets/main.css"
+			],
+			[
+				"self",
+				"app/controllers/self_drivings_controller.rb"
+			],
+			[
+				"re",
+				"app/assets/stylesheets/reservations.css"
+			],
+			[
+				"reser",
+				"app/assets/stylesheets/reservations.css"
+			],
+			[
+				"appli",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"reservation",
+				"app/controllers/reservations_controller.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"gran",
+				"app/views/admin/roles/grant.html.slim"
+			],
+			[
+				"role",
+				"app/models/admin/role.rb"
+			],
+			[
+				"style.",
+				"vendor/assets/stylesheets/style.css"
+			],
+			[
+				"ass",
+				"config/initializers/assets.rb"
+			],
+			[
+				"",
+				"app/controllers/admin/sessions_controller.rb"
+			],
+			[
+				"help",
+				"app/helpers/users_helper.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"app",
+				"vendor/assets/javascripts/app.js"
+			],
+			[
+				"contr",
+				"app/controllers/admin/sessions_controller.rb"
+			],
+			[
+				"session/",
+				"app/views/admin/sessions/new.html.slim"
+			],
+			[
+				"si",
+				"app/views/layouts/signinout.html.slim"
+			],
+			[
+				"admin",
+				"app/views/layouts/admin.html.slim"
+			],
+			[
+				"bun",
+				"bin/bundle"
+			],
+			[
+				"defa",
+				"vendor/assets/stylesheets/default.css"
+			],
+			[
+				"foo",
+				"app/views/layouts/_footer.html.haml"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"index_1143",
+				"tpl/Wap/default/Index_1143.html"
+			],
+			[
+				"index_new",
+				"tpl/Wap/default/Card_index_newsalon.html"
+			],
+			[
+				"photo",
+				"weiwincms/Lib/Action/Wap/PhotoAction.class.php"
+			],
+			[
+				"104",
+				"tpl/Wap/default/Index_104_index.html"
+			],
+			[
+				"index.tpl.php",
+				"weiwincms/Lib/ORG/index.Tpl.php"
+			],
+			[
+				"300",
+				"tpl/Wap/default/Index_300.html"
+			],
+			[
+				"d",
+				"weiwindata/conf/db.php"
+			],
+			[
+				"lib/org/index.tpl.php",
+				"weiwincms/Lib/ORG/index.Tpl.php"
+			],
+			[
+				"tmpl",
+				"weiwincms/Lib/Action/User/TmplsAction.class.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 359.0,
+		"selected_items":
+		[
+		],
+		"width": 384.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
