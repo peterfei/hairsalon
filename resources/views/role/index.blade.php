@@ -63,16 +63,25 @@
 									
 								</td>
 								<td class="hidden-480">
-									<button class="btn btn-xs btn-info">
-										<i class="icon-edit bigger-120"></i>
-									</button>
+									<a data-target="#modal-table" data-toggle="modal" role="button" href="/roles_modal">
+										<button class="btn btn-xs btn-info">
+
+												<i class="icon-edit bigger-120"></i>
+											
+										</button>
+									</a>
+									<div id="modal-table" class="modal fade">
+										@include('_partials.modal')
+									</div>
 									<button class="btn btn-xs btn-danger">
 										<i class="icon-trash bigger-120"></i>
 									</button>
 								</td>
 								
 							</tr>
+
 						@endforeach
+
 						</tbody>
 					</table>
 				</div><!-- /widget-main -->

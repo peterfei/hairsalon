@@ -82,5 +82,17 @@ class RoleController extends Controller {
 	{
 		//
 	}
-
+	
+	
+	/*
+	 *弹窗
+	 */
+	public function modal()
+	{
+		# code...
+		// $roles = Role::all();
+		// $response = array('status' => 'success', 'msg' => 'You got book details successfully');
+		return view('role.modal',['data'=>'123']);
+		
+	}
 }

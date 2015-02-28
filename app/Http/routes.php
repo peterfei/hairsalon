@@ -20,3 +20,4 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 Route::get('roles',['as'=>'roles','uses'=>'RoleController@index']);
+Route::get('roles_modal',['as'=>'roles_modal','uses'=>'RoleController@modal']);
