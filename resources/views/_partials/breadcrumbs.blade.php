@@ -5,13 +5,14 @@
 		@if($breadcrumbs)
 			<ul class="breadcrumb">
 				@foreach ($breadcrumbs as $breadcrumb)
+
 					@if (!$breadcrumb->last)
 						<li>
-							<i class="icon-home home-icon"></i>
+							<i class="icon-{{{$breadcrumb->icon}}} {{{$breadcrumb->icon}}}-icon"></i>
 							<a href="{{{ $breadcrumb->url }}}">{{{ $breadcrumb->title }}}</a>
 						</li>
 					@else
-						  <i class="icon-home home-icon"></i>
+						  <i class="icon-{{{$breadcrumb->icon}}} {{{$breadcrumb->icon}}}-icon"></i>
 						  <li class="active">{{{ $breadcrumb->title }}}</li>
 					@endif
 					

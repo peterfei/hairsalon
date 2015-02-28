@@ -3,6 +3,9 @@
 @section('sidebar')
 	@include('layout.sidebar')
 @endsection
+@section('breadcrumbs')
+	@include('_partials.breadcrumbs', ['breadcrumbs' => Breadcrumbs::generate('home', 'home')])
+@endsection
 @section('content')
 <div class="container">
 	<div class="row">

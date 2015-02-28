@@ -39,6 +39,32 @@
 								<span class="menu-text"> 控制台 </span>
 							</a>
 						</li>
+						<li class="">
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-edit"></i>
+								<span class="menu-text"> 用户角色权限 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu" style="display: none;">
+								<li>
+									<a href="/roles">
+										<i class="icon-double-angle-right"></i>
+										用户角色
+									</a>
+								</li>
+
+								<li>
+									<a href="/permissions">
+										<i class="icon-double-angle-right"></i>
+										权限
+									</a>
+								</li>
+
+								
+							</ul>
+						</li>
 					</ul><!-- /.nav-list -->
 					
 

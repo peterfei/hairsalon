@@ -2,15 +2,15 @@
 
 // Home
 Breadcrumbs::register('home', function($breadcrumbs) {
-    $breadcrumbs->push('首页', route('home'));
+    $breadcrumbs->push('首页', route('home'),['icon' => 'home']);
 });
 
-// // Home > About
-// Breadcrumbs::register('about', function($breadcrumbs)
-// {
-//     $breadcrumbs->parent('home');
-//     $breadcrumbs->push('About', route('about'));
-// });
+// Home > roles
+Breadcrumbs::register('roles', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('角色', route('roles'),['icon' => 'cog']);
+});
 
 // // Home > Blog
 // Breadcrumbs::register('blog', function($breadcrumbs)

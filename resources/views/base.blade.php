@@ -20,7 +20,8 @@
 				</a>
 				@yield('sidebar')
 				<div class="main-content">
-					@include('_partials.breadcrumbs', ['breadcrumbs' => Breadcrumbs::generate('home', 'home')])
+					@yield('breadcrumbs')
+					
 					<div class="page-content">
 						<div class="row">
 							<div class="col-xs-12">
