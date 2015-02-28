@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-
+use App\Role;
 class RoleController extends Controller {
 
 	/**
@@ -14,7 +14,9 @@ class RoleController extends Controller {
 	 */
 	public function index()
 	{
-		return view('role.index');
+		//角色列表
+		$roles = Role::all();
+		return view('role.index',['roles'=>$roles]);
 	}
 
 	/**

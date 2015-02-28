@@ -9,15 +9,18 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="widget-box transparent">
+
 				<div class="widget-header widget-header-flat">
-					<h4 class="light">
-						<i class="icon-star orange"></i>
-					</h4>
-					<div class="widget-toolbar">
+					
+					<a href="#" class="btn btn-primary">
+						<i class="icon-pencil"></i>
+						新增
+					</a>
+					<!-- <div class="widget-toolbar">
 						<a href="#" data-action="collapse">
 							<i class="icon-chevron-up"></i>
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="widget-body">
@@ -32,31 +35,44 @@
 
 								<th>
 									<i class="icon-caret-right blue"></i>
-									价格
+									权限
 								</th>
 
 								<th class="hidden-480">
 									<i class="icon-caret-right blue"></i>
-									状态
+									操作
 								</th>
 							</tr>
 						</thead>
 
 						<tbody>
+						@foreach ($roles as $role)
 							<tr>
-								<td>internet.com</td>
 
+								<td>{{$role->display_name}}</td>
 								<td>
-									<small>
-										<s class="red">$29.99</s>
-									</small>
-									<b class="green">$19.99</b>
+									@if (count($role->perms)>1)
+										@foreach ($role->perms as $perm)
+											<span class="label label-sm label-primary arrowed arrowed-right">
+												{{$perm->display_name}}
+											</span>
+										@endforeach
+									@else
+										暂无
+									@endif
+									
 								</td>
-
 								<td class="hidden-480">
-									<span class="label label-info arrowed-right arrowed-in">销售中</span>
+									<button class="btn btn-xs btn-info">
+										<i class="icon-edit bigger-120"></i>
+									</button>
+									<button class="btn btn-xs btn-danger">
+										<i class="icon-trash bigger-120"></i>
+									</button>
 								</td>
+								
 							</tr>
+						@endforeach
 						</tbody>
 					</table>
 				</div><!-- /widget-main -->
