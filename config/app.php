@@ -146,7 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
 		'Zizaco\Entrust\EntrustServiceProvider',
-		'Cartalyst\NestedSets\Laravel\NestedSetsServiceProvider',
+		// 'Cartalyst\NestedSets\Laravel\NestedSetsServiceProvider',
 
 	],
 
