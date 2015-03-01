@@ -16,3 +16,4 @@
     <!-- /.modal-content -->
 </div>
 <!-- /.modal-dialog -->
+@yield('script')

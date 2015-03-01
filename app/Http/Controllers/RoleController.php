@@ -92,7 +92,7 @@ class RoleController extends Controller {
 		# code...
 		// $roles = Role::all();
 		// $response = array('status' => 'success', 'msg' => 'You got book details successfully');
-		return view('role.modal',['data'=>'123']);
+		return view('role.role_modal',['data'=>'123']);
 		
 	}
 }
