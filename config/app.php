@@ -146,7 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
 		'Zizaco\Entrust\EntrustServiceProvider',
-
+		'Clockwork\Support\Laravel\ClockworkServiceProvider',
 	],
 
 	/*
@@ -196,7 +196,7 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 		'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
 		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
-
+		'Clockwork' => 'Clockwork\Support\Laravel\Facade',
 	],
 
 ];
