@@ -9,9 +9,15 @@ Breadcrumbs::register('home', function($breadcrumbs) {
 Breadcrumbs::register('roles', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('角色', route('roles'),['icon' => 'cog']);
+    $breadcrumbs->push('角色', route('roles'),['icon' => 'angle-right']);
 });
 
+// Home > roles
+Breadcrumbs::register('soverview', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('每日总览', route('soverview'),['icon' => 'angle-right']);
+});
 // // Home > Blog
 // Breadcrumbs::register('blog', function($breadcrumbs)
 // {

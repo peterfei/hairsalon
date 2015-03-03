@@ -21,3 +21,7 @@ Route::controllers([
 ]);
 Route::get('roles',['as'=>'roles','uses'=>'RoleController@index']);
 Route::get('roles_modal',['as'=>'roles_modal','uses'=>'RoleController@modal']);
+
+//--------------- Start config route for statistics module ---------------//
+Route::get('soverview',['as'=>'soverview','uses'=>'Statistics\StatisticsController@overview']);
+//--------------- Start config route for statistics module ---------------//	
