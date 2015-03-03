@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Role;
+use App\Permission;
 class RoleController extends Controller {
 
 	/**
@@ -92,7 +93,31 @@ class RoleController extends Controller {
 		# code...
 		// $roles = Role::all();
 		// $response = array('status' => 'success', 'msg' => 'You got book details successfully');
-		return view('role.role_modal',['data'=>'123']);
+		$permissons = Permission::tree();
+		// dump($permissons->toArray());
+		// $data = '[{name: "父节点1", children: [{name: "子节点1"},{name: "子节点2"}]}]';
+		// dump($data);
+		return view('role.role_modal',['data'=>$permissons->toArray()]);
 		
+	}
+	/*
+	 *角色赋值给权限
+	 */
+	public function role_permissions(Request $request)
+	{
+		# code...
+		// var_dump($request->input("nodes"));
+		$role = Role::find(58);
+		// var_dump($role);
+		$nodes =array_filter(explode(',', $request->input("nodes"))) ;
+		// print_r($nodes);
+		foreach ($nodes as $node) {
+			# code...
+			$permission  = Permission::where('id','=',(int)$node)->get()->first();
+			// var_dump($permission);
+			$role->attachPermission($permission);
+		}
+		
+
 	}
 }

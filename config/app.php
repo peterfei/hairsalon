@@ -147,6 +147,8 @@ return [
 		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
 		'Zizaco\Entrust\EntrustServiceProvider',
 		// 'Cartalyst\NestedSets\Laravel\NestedSetsServiceProvider',
+		// 'Baum\BaumServiceProvider',
+
 
 	],
 
@@ -197,8 +199,6 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 		'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
 		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
-		'NestedSet' => 'Kalnoy\Nestedset\NestedSet',
-	    'Node' => 'Kalnoy\Nestedset\Node',
 
 	],
 

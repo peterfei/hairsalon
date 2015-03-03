@@ -21,3 +21,5 @@ Route::controllers([
 ]);
 Route::get('roles',['as'=>'roles','uses'=>'RoleController@index']);
 Route::get('roles_modal',['as'=>'roles_modal','uses'=>'RoleController@modal']);
+// role_permissions
+Route::get('role_permissions',['as'=>'role_permissions','uses'=>'RoleController@role_permissions']);

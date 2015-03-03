@@ -1,17 +1,19 @@
 @extends('_partials.modal')
 @section('modal-title')
-	{{$data}}
+	111
 @endsection
 @section('modal-body')
 	<ul id="ztree" class="ztree"></ul>
-	{{$data}}
+	111
 @endsection
 @section('modal-footer')
 	<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-    <button type="submit" class="btn btn-primary">确认</button>
+    <button type="submit" class="btn btn-primary" id="submit">确认</button>
 @endsection
 @section('script')
-@include('layout.basescript')
+<script type="text/javascript">
+	window.jQuery || document.write("<script src='/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+</script>
 <link rel="stylesheet" href="/css/zTreeStyle.css" type="text/css">
 <script type="text/javascript" src="/js/jquery.ztree.core-3.5.min.js"></script>
 <script type="text/javascript" src="/js/jquery.ztree.excheck-3.5.min.js"></script>
@@ -19,32 +21,61 @@
 	var setting = {
 			check: {
 				enable: true
-			},
-			data: {
-				simpleData: {
-					enable: true
-				}
 			}
 		};
+			
+	var zNodes =
+		[
+			@foreach ($data as $item)
+			{
+				id:"{{$item['id']}}",
+				name:"{{$item['name']}}",
+				children:[
+					@if (count($item['children'])>1)
+						@foreach ($item['children'] as $child)
+							{
+								id:"{{$child['id']}}",
+								name:"{{$child['name']}}"
+							@if (last($child))
+							}
+							@else
+							},
+							@endif
+						@endforeach
+					@endif 
+				]
+				@if (last($item))
+				}
+				@else
+				},
+				@endif
 
-		var zNodes =[
-			{ id:1, pId:0, name:"随意勾选 1", open:true},
-			{ id:11, pId:1, name:"随意勾选 1-1", open:true},
-			{ id:111, pId:11, name:"随意勾选 1-1-1"},
-			{ id:112, pId:11, name:"随意勾选 1-1-2"},
-			{ id:12, pId:1, name:"随意勾选 1-2", open:true},
-			{ id:121, pId:12, name:"随意勾选 1-2-1"},
-			{ id:122, pId:12, name:"随意勾选 1-2-2"},
-			{ id:2, pId:0, name:"随意勾选 2", checked:true, open:true},
-			{ id:21, pId:2, name:"随意勾选 2-1"},
-			{ id:22, pId:2, name:"随意勾选 2-2", open:true},
-			{ id:221, pId:22, name:"随意勾选 2-2-1", checked:true},
-			{ id:222, pId:22, name:"随意勾选 2-2-2"},
-			{ id:23, pId:2, name:"随意勾选 2-3"}
-		];
+			
+			@endforeach
+		];	
 	$(function(){
+		
 		$.fn.zTree.init($("#ztree"), setting, zNodes);
+		$('#submit').click(function(){
+			 var treeObj = $.fn.zTree.getZTreeObj("ztree");
+		     var nodes = treeObj.getCheckedNodes(true);
+			 console.log(nodes);
+			 //发 Ajax 请求， 为角色赋予权限
+			var classpurview = "";
+		    for(var i=0;i<nodes.length;i++) {
+			   classpurview += "," + nodes[i].id
+		    }
+		    // alert(classpurview);
+			 $.ajax({
+			 	url:'/role_permissions',
+			 	type:'get',
+			 	data:{nodes:classpurview},
+			 	success:function(data){
+			 		console.log(data);
+			 	}
+			 });
 
+		});
 	})
 </script>
 @endsection
