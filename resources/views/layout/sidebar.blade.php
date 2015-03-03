@@ -65,6 +65,30 @@
 								
 							</ul>
 						</li>
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-bar-chart"></i>
+								<span class="menu-text"> 统计报表 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="/soverview">
+										<i class="icon-double-angle-right"></i>
+										每日总览
+									</a>
+								</li>
+
+								<li>
+									<a href="jqgrid.html">
+										<i class="icon-double-angle-right"></i>
+										趋势分析
+									</a>
+								</li>
+							</ul>
+						</li>
 					</ul><!-- /.nav-list -->
 					
 
