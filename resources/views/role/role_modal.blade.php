@@ -3,8 +3,8 @@
 	111
 @endsection
 @section('modal-body')
+	<div class="message"></div>
 	<ul id="ztree" class="ztree"></ul>
-	111
 @endsection
 @section('modal-footer')
 	<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -30,11 +30,13 @@
 			{
 				id:"{{$item['id']}}",
 				name:"{{$item['name']}}",
+				checked: @if (in_array($item['id'],array_fetch($role->perms->toArray(),'id'))) true @else false @endif,
 				children:[
 					@if (count($item['children'])>1)
 						@foreach ($item['children'] as $child)
 							{
 								id:"{{$child['id']}}",
+								checked: @if (in_array($child['id'],array_fetch($role->perms->toArray(),'id'))) true @else false @endif,
 								name:"{{$child['name']}}"
 							@if (last($child))
 							}
@@ -56,9 +58,15 @@
 	$(function(){
 		
 		$.fn.zTree.init($("#ztree"), setting, zNodes);
+		// 取得选中Ztree 组
+		$perms = '{{$role->perms}}';
+		// console.log($perms);
+		var treeObj = $.fn.zTree.getZTreeObj("ztree");
+		treeObj.checkNode('18',true,true);
 		$('#submit').click(function(){
-			 var treeObj = $.fn.zTree.getZTreeObj("ztree");
+			 
 		     var nodes = treeObj.getCheckedNodes(true);
+		     var cancelnodes = treeObj.getCheckedNodes(false);
 			 console.log(nodes);
 			 //发 Ajax 请求， 为角色赋予权限
 			var classpurview = "";
@@ -69,13 +77,19 @@
 			 $.ajax({
 			 	url:'/role_permissions',
 			 	type:'get',
-			 	data:{nodes:classpurview},
+			 	data:{nodes:classpurview,cancelnodes:cancelnodes},
 			 	success:function(data){
-			 		console.log(data);
+			 		// if (data) {
+			 			$('.message').append('{!!HTML::alert("'+data+'", "权限定义成功", "恭喜")!!}');
+			 			setTimeout(function() {$("#modal-table").modal('hide');}, 1000);
+			 			window.location.href= '/roles';
+			 		// };
+			 		
 			 	}
 			 });
 
 		});
+
 	})
 </script>
 @endsection

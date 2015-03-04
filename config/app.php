@@ -144,9 +144,12 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'Illuminate\Html\HtmlServiceProvider',
+		'App\Providers\MacroServiceProvider',
 		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
 		'Zizaco\Entrust\EntrustServiceProvider',
 		'Clockwork\Support\Laravel\ClockworkServiceProvider',
+
 	],
 
 	/*
@@ -197,6 +200,8 @@ return [
 		'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
 		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
 		'Clockwork' => 'Clockwork\Support\Laravel\Facade',
+		'Form'=> 'Illuminate\Html\FormFacade', 
+		'HTML'=> 'Illuminate\Html\HtmlFacade'
 	],
 
 ];

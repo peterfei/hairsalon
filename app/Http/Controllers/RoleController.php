@@ -96,8 +96,8 @@ class RoleController extends Controller {
 		$permissons = Permission::tree();
 		// dump($permissons->toArray());
 		// $data = '[{name: "父节点1", children: [{name: "子节点1"},{name: "子节点2"}]}]';
-		// dump($data);
-		return view('role.role_modal',['data'=>$permissons->toArray()]);
+		// dump(array_fetch(Role::find(58)->perms->toArray(),'id'));
+		return view('role.role_modal',['data'=>$permissons->toArray(),'role'=> Role::find(58)]);
 		
 	}
 	/*
@@ -108,16 +108,33 @@ class RoleController extends Controller {
 		# code...
 		// var_dump($request->input("nodes"));
 		$role = Role::find(58);
-		// var_dump($role);
+		// dump($role->perms->toArray());
 		$nodes =array_filter(explode(',', $request->input("nodes"))) ;
-		// print_r($nodes);
-		foreach ($nodes as $node) {
-			# code...
-			$permission  = Permission::where('id','=',(int)$node)->get()->first();
-			// var_dump($permission);
-			$role->attachPermission($permission);
-		}
+		$cancelnodes = $request->input("cancelnodes") ;
 		
 
+		// $role->detachPermission($role->perms()->first());
+		
+		// dump($cancelnodes);
+		if (count($cancelnodes)>0) {
+			foreach ($cancelnodes as $cal) {
+			# code...
+			$cal  = Permission::where('id','=',(int)$cal)->get()->first();
+			// var_dump($permission);
+			$role->detachPermission($cal);
+			// $role->attachPermission($permission);
+			}
+		}
+		if (count($nodes)>0) {
+			foreach ($nodes as $node) {
+			# code...
+				$permission  = Permission::where('id','=',(int)$node)->get()->first();
+				// var_dump($permission);
+				$role->detachPermission($permission);
+				$role->attachPermission($permission);
+			}
+		}
+		
+		return response() ->json('success',200);
 	}
 }

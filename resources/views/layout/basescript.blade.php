@@ -52,4 +52,5 @@
 		<!-- inline scripts related to this page -->
 		
 			@yield('script')
+			@include('layout.globe')
 		
