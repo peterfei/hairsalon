@@ -16,10 +16,9 @@ class CreateItemDataTable extends Migration {
 			Schema::create('item_data', function(Blueprint $table)
 			{
 				$table->string('group', 50);			
-				$table->string('name', 50);
+				$table->string('item', 50);
 				$table->string('value', 50);
-				$table->string('editor', 10)->default('text');
-				$table->primary(array('group', 'name'));
+				$table->primary(array('group', 'item'));
 			});
 		}
 	}
