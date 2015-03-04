@@ -23,7 +23,7 @@ CREATE TRIGGER `tg_i_on_cost` AFTER INSERT ON `cost`
  select date_format(from_unixtime(new.created_at),'%y-%m-%d') into @insert_date;
  if not exists (select created_date from overview_daily where created_date = @insert_date) then
         if new.cid <> '' && new.action <> 'topup' then
-            insert into overview_daily(card_cost, card_cost, created_date, created_time) values(new.real_pay, 1, @insert_date, unix_timestamp(@insert_date));
+            insert into overview_daily(card_cost, card_cost_num, created_date, created_time) values(new.real_pay, 1, @insert_date, unix_timestamp(@insert_date));
         elseif new.cid <> '' && new.action = 'topup' then
             insert into overview_daily(card_topup, created_date, created_time) values(new.real_pay, @insert_date, unix_timestamp(@insert_date));
         else
