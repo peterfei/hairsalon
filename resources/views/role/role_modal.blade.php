@@ -1,6 +1,6 @@
 @extends('_partials.modal')
 @section('modal-title')
-	111
+	用户角色
 @endsection
 @section('modal-body')
 	<div class="message"></div>
@@ -62,7 +62,7 @@
 		$perms = '{{$role->perms}}';
 		// console.log($perms);
 		var treeObj = $.fn.zTree.getZTreeObj("ztree");
-		treeObj.checkNode('18',true,true);
+		// treeObj.checkNode('18',true,true);
 		$('#submit').click(function(){
 			 
 		     var nodes = treeObj.getCheckedNodes(true);
@@ -77,11 +77,11 @@
 			 $.ajax({
 			 	url:'/role_permissions',
 			 	type:'get',
-			 	data:{nodes:classpurview,cancelnodes:cancelnodes},
+			 	data:{nodes:classpurview,cancelnodes:cancelnodes,modal_id:'{{$modal_id}}'},
 			 	success:function(data){
 			 		// if (data) {
 			 			$('.message').append('{!!HTML::alert("'+data+'", "权限定义成功", "恭喜")!!}');
-			 			setTimeout(function() {$("#modal-table").modal('hide');}, 1000);
+			 			setTimeout(function() {$("#modal-table").modal('hide');}, 3000);
 			 			window.location.href= '/roles';
 			 		// };
 			 		

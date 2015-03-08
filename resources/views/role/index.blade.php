@@ -63,7 +63,7 @@
 									
 								</td>
 								<td class="hidden-480">
-									<a data-target="#modal-table" data-toggle="modal" role="button" href="/roles_modal">
+									<a data-target="#modal-table" data-toggle="modal" role="button" href="/roles_modal/{{$role->id}}">
 										<button class="btn btn-xs btn-info">
 
 												<i class="icon-edit bigger-120"></i>

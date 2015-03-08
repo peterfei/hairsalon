@@ -88,7 +88,7 @@ class RoleController extends Controller {
 	/*
 	 *弹窗
 	 */
-	public function modal()
+	public function modal(Request $request)
 	{
 		# code...
 		// $roles = Role::all();
@@ -97,7 +97,9 @@ class RoleController extends Controller {
 		// dump($permissons->toArray());
 		// $data = '[{name: "父节点1", children: [{name: "子节点1"},{name: "子节点2"}]}]';
 		// dump(array_fetch(Role::find(58)->perms->toArray(),'id'));
-		return view('role.role_modal',['data'=>$permissons->toArray(),'role'=> Role::find(58)]);
+		// dump();
+		$id = $request->route("id");
+		return view('role.role_modal',['data'=>$permissons->toArray(),'role'=> Role::find($id),'modal_id'=>$id]);
 		
 	}
 	/*
@@ -107,7 +109,7 @@ class RoleController extends Controller {
 	{
 		# code...
 		// var_dump($request->input("nodes"));
-		$role = Role::find(58);
+		$role = Role::find($request->input("modal_id"));
 		// dump($role->perms->toArray());
 		$nodes =array_filter(explode(',', $request->input("nodes"))) ;
 		$cancelnodes = $request->input("cancelnodes") ;
