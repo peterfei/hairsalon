@@ -3,7 +3,7 @@
 @include('layout.sidebar')
 @endsection
 @section('breadcrumbs')
-@include('_partials.breadcrumbs', ['breadcrumbs' => Breadcrumbs::generate('soverview')])
+@include('_partials.breadcrumbs', ['breadcrumbs' => Breadcrumbs::generate('home')])
 @endsection
 @section('content')
 
@@ -15,17 +15,18 @@
 			今日总览
 		</h3>
 		<div class="infobox-container">
+			
 			<div class="infobox infobox-green  ">
 				<div class="infobox-icon">
 					<i class="icon-user"></i>
 				</div>
 
 				<div class="infobox-data">
-					<span class="infobox-data-number">{{$overview->new_mem_num}}</span>
+					<span class="infobox-data-number">{{isset($overview->new_mem_num) ? $overview->new_mem_num : 0}}</span>
 					<div class="infobox-content">新增会员</div>
 				</div>
 				<div class="badge badge-info">
-					{{$overview->total_mem_num}}
+					{{isset($overview->total_mem_num) ? $overview->total_mem_num : 0}}
 				</div>
 			</div>
 
@@ -35,14 +36,19 @@
 				</div>
 
 				<div class="infobox-data">
-					<span class="infobox-data-number">{{$overview->card_cost_num}}</span>
+					<span class="infobox-data-number">{{isset($overview->card_cost_num) ? $overview->card_cost_num : 0}}</span>
 					<div class="infobox-content">会员消费人次</div>
 				</div>
-				@if ($overview->mem_rate >= 0)
-				    <div class="stat stat-success">+{{$overview->mem_rate}}%</div>
-				@else
-				    <div class="stat stat-important">{{$overview->mem_rate}}%</div>
-				@endif
+					@if (isset($overview->mem_rate))
+						@if ($overview->mem_rate >= 0)
+						    <div class="stat stat-success">+{{$overview->mem_rate}}%</div>
+						@else
+						    <div class="stat stat-important">{{$overview->mem_rate}}%</div>
+						@endif
+					@else
+						<div class="stat stat-success">0%</div>
+					@endif
+
 			</div>
 
 			<div class="infobox infobox-pink  ">
@@ -51,17 +57,19 @@
 				</div>
 
 				<div class="infobox-data">
-					<span class="infobox-data-number">{{$overview->non_card_cost_num}}</span>
+					<span class="infobox-data-number">{{isset($overview->non_card_cost_num) ? $overview->non_card_cost_num : 0}}</span>
 					<div class="infobox-content">非会员消费人次</div>
 				</div>
-				@if ($overview->non_mem_rate >= 0)
-				    <div class="stat stat-success">+{{$overview->non_mem_rate}}%</div>
+				@if(isset($overview->non_mem_rate))
+					@if ($overview->non_mem_rate >= 0)
+					    <div class="stat stat-success">+{{$overview->non_mem_rate}}%</div>
+					@else
+					    <div class="stat stat-important">{{$overview->non_mem_rate}}%</div>
+					@endif
 				@else
-				    <div class="stat stat-important">{{$overview->non_mem_rate}}%</div>
+					<div class="stat stat-success">0%</div>
 				@endif
-			</div>
-
-			
+			</div>		
 
 			<div class="space-6"></div>
 
@@ -72,7 +80,7 @@
 
 				<div class="infobox-data">
 					<div class="infobox-content">现金收入</div>
-					<div class="infobox-content">{{$overview->non_card_cost}}</div>
+					<div class="infobox-content">{{isset($overview->non_card_cost) ? $overview->non_card_cost : 0}}</div>
 				</div>
 			</div>
 
@@ -82,7 +90,7 @@
 				</div>
 				<div class="infobox-data">
 					<div class="infobox-content">刷卡收入</div>
-					<div class="infobox-content">{{$overview->card_cost}}</div>
+					<div class="infobox-content">{{isset($overview->card_cost) ? $overview->card_cost : 0}}</div>
 				</div>
 			</div>
 
@@ -93,9 +101,9 @@
 
 				<div class="infobox-data">
 					<div class="infobox-content">会员充值</div>
-					<div class="infobox-content">{{$overview->card_topup}}</div>
+					<div class="infobox-content">{{isset($overview->card_topup) ? $overview->card_topup : 0}}</div>
 				</div>
-			</div>
+			</div>		
 		</div>
 	</div>
 
@@ -122,7 +130,7 @@
 					<ul class="dropdown-menu pull-right dropdown-125 dropdown-lighter dropdown-caret">
 						<li class="active">
 							<a href="#" class="blue">
-								<i class="icon-caret-right bigger-110">&nbsp;</i>
+								<i class="icon-caret-right bigger-110 ">&nbsp;</i>
 								本周
 							</a>
 						</li>
@@ -168,10 +176,10 @@
 <script type="text/javascript">
 function initPieChart(data) {
 	var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
-	/** var data = [];
+	{{-- var data = [];
 	@foreach ($chartdatas as $chartdata) 
 	 	data.push({ label: "{{$chartdata['label']}}", data: {{$chartdata['data']}}, color: "{{$chartdata['color']}}"});
-	@endforeach*/
+	@endforeach--}}
 
 	function drawPieChart(placeholder, data, position) {
 		$.plot(placeholder, data, {
@@ -228,28 +236,22 @@ function initPieChart(data) {
 
 	});	
 }
-var data = [
-	{ label: "social networks",  data: 38.7, color: "#68BC31"},
-	{ label: "search engines",  data: 24.5, color: "#2091CF"},
-	{ label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
-	{ label: "direct traffic",  data: 18.6, color: "#DA5430"},
-	{ label: "other",  data: 10, color: "#FEE074"}
-  ];
+var data = [];
+@if($chartdatas != '')
+	@foreach ($chartdatas as $chartdata) 
+	 	data.push({ label: "{{$chartdata['label']}}", data: {{$chartdata['data']}}, color: "{{$chartdata['color']}}"});
+	@endforeach
+@endif
 initPieChart(data);
 
-function updatePieChart() {
 $(document).ready(function(){
-$("#b01").click(function(){
-htmlobj=$.ajax({url:"/jquery/test1.txt",async:false});
-$("#myDiv").html(htmlobj.responseText);
-});
-});
-
-}
-$(document).ready(function(){
-	$("ul.dropdown-menu a").click(function($this){
-		console.log($this.attr());
-	});
+	$("ul.dropdown-menu a").click(function(){
+		console.log($(this).text());
+		$('#piechartid').html($(this).text()+'<i class="icon-angle-down icon-on-right bigger-110"></i>');
+		console.log('jdflkjsfls');
+		$(this).parent('li').children('i').hasClass("invisible").toggleClass('invisible');
+		$(this).children('i').toggleClass('invisible');
+	})
 });
 
 </script>

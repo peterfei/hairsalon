@@ -25,5 +25,6 @@ Route::get('roles_modal/{id}',['as'=>'roles_modal','uses'=>'RoleController@modal
 Route::get('role_permissions',['as'=>'role_permissions','uses'=>'RoleController@role_permissions']);
 
 //--------------- Start config route for statistics module ---------------//
-Route::get('soverview',['as'=>'soverview','uses'=>'Statistics\StatisticsController@overview']);
+Route::get('showchart',['as'=>'showchart','uses'=>'Statistics\StatisticsController@showChart']);
+Route::get('getchartdata',['as'=>'getchartdata','uses'=>'Statistics\StatisticsController@getChartData']);
 //--------------- Start config route for statistics module ---------------//	

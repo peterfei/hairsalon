@@ -13,10 +13,10 @@ Breadcrumbs::register('roles', function($breadcrumbs)
 });
 
 // Home > roles
-Breadcrumbs::register('soverview', function($breadcrumbs)
+Breadcrumbs::register('showchart', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');
-    $breadcrumbs->push('每日总览', route('soverview'),['icon' => 'angle-right']);
+    $breadcrumbs->push('用户消费趋势', route('showchart'),['icon' => 'angle-right']);
 });
 // // Home > Blog
 // Breadcrumbs::register('blog', function($breadcrumbs)
