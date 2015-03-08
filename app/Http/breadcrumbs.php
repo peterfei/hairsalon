@@ -18,6 +18,12 @@ Breadcrumbs::register('showchart', function($breadcrumbs)
     $breadcrumbs->parent('home');
     $breadcrumbs->push('用户消费趋势', route('showchart'),['icon' => 'angle-right']);
 });
+Breadcrumbs::register('members', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('会员', route('members.index'),['icon' => 'angle-right']);
+});
+
 // // Home > Blog
 // Breadcrumbs::register('blog', function($breadcrumbs)
 // {

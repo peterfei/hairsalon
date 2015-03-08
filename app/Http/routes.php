@@ -19,6 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+Route::resource('members', 'MemberController');
 Route::get('roles',['as'=>'roles','uses'=>'RoleController@index']);
 Route::get('roles_modal/{id}',['as'=>'roles_modal','uses'=>'RoleController@modal']);
 // role_permissions
