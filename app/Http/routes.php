@@ -19,6 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+Route::post('members/store',['as'=>'members.store','uses'=>'MemberController@store']);
 Route::resource('members', 'MemberController');
 Route::get('roles',['as'=>'roles','uses'=>'RoleController@index']);
 Route::get('roles_modal/{id}',['as'=>'roles_modal','uses'=>'RoleController@modal']);

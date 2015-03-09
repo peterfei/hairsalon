@@ -52,7 +52,7 @@ return [
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'zh-CN',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -149,6 +149,7 @@ return [
 		'DaveJamesMiller\Breadcrumbs\ServiceProvider',
 		'Zizaco\Entrust\EntrustServiceProvider',
 		'Clockwork\Support\Laravel\ClockworkServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 
 	],
 
@@ -201,7 +202,8 @@ return [
 		'Entrust' => 'Zizaco\Entrust\EntrustFacade',
 		'Clockwork' => 'Clockwork\Support\Laravel\Facade',
 		'Form'=> 'Illuminate\Html\FormFacade', 
-		'HTML'=> 'Illuminate\Html\HtmlFacade'
+		'HTML'=> 'Illuminate\Html\HtmlFacade',
+		'Debugbar' => 'Barryvdh\Debugbar\Facade',
 	],
 
 ];

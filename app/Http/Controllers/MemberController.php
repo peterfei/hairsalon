@@ -3,9 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
-// use Request;
 use App\Member;
+use App\Http\Requests\MemberRequest;
 class MemberController extends Controller {
 
 	/**
@@ -37,7 +36,7 @@ class MemberController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('member.member_new');
 	}
 
 	/**
@@ -45,9 +44,28 @@ class MemberController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request,MemberRequest $member_request)
 	{
-		//
+		// Debugbar::addMessage('member obj',$member);
+		$member = new Member();
+		$member->name = $request->input('name');
+		$member->phone = $request->input('phone');
+		$member->gender = $request->input('gender');
+		$member->cid = $request->input('cid');
+		$member->level = $request->input('level');
+		$member->expiration = $request->input('expiration');
+		$member->status = $request->input('status');
+		$member->integral = $request->input('integral');
+		// Debugbar::addMessage('member obj',$member);
+		if ($member->save()) {
+			# code...
+			$html = view('member._index',['data'=>Member::orderBy('id','desc')->paginate(15)])->render();
+			return response()->json(['success'=>'success','data'=>$html]);
+		}else{
+			return response()->json('fail');
+		}
+
+		
 	}
 
 	/**

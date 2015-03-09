@@ -68,42 +68,26 @@
 	"buffers":
 	[
 		{
-			"file": "config/app.php",
+			"file": "resources/views/member/index.blade.php",
 			"settings":
 			{
-				"buffer_size": 7577,
+				"buffer_size": 1732,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "composer.json",
+			"file": "app/Http/Controllers/MemberController.php",
 			"settings":
 			{
-				"buffer_size": 943,
+				"buffer_size": 1623,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/RoleController.php",
+			"file": "resources/views/member/member_new.blade.php",
 			"settings":
 			{
-				"buffer_size": 2657,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/role/role_modal.blade.php",
-			"settings":
-			{
-				"buffer_size": 2513,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/role/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 2175,
+				"buffer_size": 1335,
 				"line_ending": "Unix"
 			}
 		}
@@ -237,14 +221,14 @@
 		"/Users/liufei/php/Hairsalon/app",
 		"/Users/liufei/php/Hairsalon/app/Commands",
 		"/Users/liufei/php/Hairsalon/app/Console",
+		"/Users/liufei/php/Hairsalon/app/Http",
 		"/Users/liufei/php/Hairsalon/app/Http/Controllers",
-		"/Users/liufei/php/Hairsalon/app/Http/Controllers/Auth",
-		"/Users/liufei/php/Hairsalon/app/Http/Controllers/Statistics",
 		"/Users/liufei/php/Hairsalon/app/Http/Middleware",
 		"/Users/liufei/php/Hairsalon/app/Http/Requests",
 		"/Users/liufei/php/Hairsalon/app/Providers",
 		"/Users/liufei/php/Hairsalon/app/Services",
 		"/Users/liufei/php/Hairsalon/bootstrap",
+		"/Users/liufei/php/Hairsalon/config",
 		"/Users/liufei/php/Hairsalon/database",
 		"/Users/liufei/php/Hairsalon/database/migrations",
 		"/Users/liufei/php/Hairsalon/database/seeds",
@@ -252,20 +236,33 @@
 		"/Users/liufei/php/Hairsalon/resources/macros",
 		"/Users/liufei/php/Hairsalon/resources/views",
 		"/Users/liufei/php/Hairsalon/resources/views/_partials",
-		"/Users/liufei/php/Hairsalon/resources/views/layout",
+		"/Users/liufei/php/Hairsalon/resources/views/member",
 		"/Users/liufei/php/Hairsalon/resources/views/role",
 		"/Users/liufei/php/Hairsalon/storage",
-		"/Users/liufei/php/Hairsalon/storage/logs",
-		"/Users/liufei/php/Hairsalon/vendor/illuminate",
-		"/Users/liufei/php/Hairsalon/vendor/illuminate/html"
+		"/Users/liufei/php/Hairsalon/storage/logs"
 	],
 	"file_history":
 	[
+		"/Users/liufei/php/Hairsalon/database/seeds/MembersSeeder.php",
+		"/Users/liufei/php/Hairsalon/app/Member.php",
+		"/Users/liufei/php/Hairsalon/vendor/swiftmailer/swiftmailer/tests/fixtures/MimeEntityFixture.php",
+		"/Users/liufei/php/Hairsalon/resources/views/member/_index.blade.php",
+		"/Users/liufei/php/Hairsalon/app/Http/routes.php",
+		"/Users/liufei/php/Hairsalon/app/Http/Controllers/MemberController.php",
+		"/Users/liufei/php/Hairsalon/app/Http/Controllers/RoleController.php",
+		"/Users/liufei/php/Hairsalon/database/migrations/2015_03_08_063152_create_members_table.php",
+		"/Users/liufei/php/Hairsalon/config/app.php",
+		"/Users/liufei/php/Hairsalon/app/Http/breadcrumbs.php",
+		"/Users/liufei/php/Hairsalon/resources/views/role/index.blade.php",
+		"/Users/liufei/php/Hairsalon/composer.json",
+		"/Users/liufei/php/Hairsalon/database/migrations/2015_02_27_123705_create_member_table.php",
+		"/Users/liufei/php/Hairsalon/resources/views/role/role_modal.blade.php",
+		"/Users/liufei/php/Hairsalon/app/Http/Controllers/Members.php",
+		"/Users/liufei/php/Hairsalon/app/Providers/RouteServiceProvider.php",
 		"/Users/liufei/php/Hairsalon/app/Providers/MacroServiceProvider.php",
 		"/Users/liufei/php/Hairsalon/resources/views/layout/basescript.blade.php",
 		"/Users/liufei/php/Hairsalon/resources/views/layout/globe.blade.php",
 		"/Users/liufei/php/Hairsalon/resources/macros/alert_macro.php",
-		"/Users/liufei/php/Hairsalon/resources/views/role/role_modal.blade.php",
 		"/Users/liufei/php/Hairsalon/server.php",
 		"/Users/liufei/php/Hairsalon/vendor/nesbot/carbon/tests/SubTest.php",
 		"/Users/liufei/php/Hairsalon/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleTraitAsset.php",
@@ -274,19 +271,15 @@
 		"/Users/liufei/php/Hairsalon/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/GreaterOrEqual.php",
 		"/Users/liufei/php/Hairsalon/vendor/phpunit/phpunit/src/Util/GlobalState.php",
 		"/Users/liufei/php/Hairsalon/vendor/psy/psysh/src/Psy/ExecutionLoop/ForkingLoop.php",
-		"/Users/liufei/php/Hairsalon/app/Http/routes.php",
-		"/Users/liufei/php/Hairsalon/composer.json",
 		"/Users/liufei/php/Hairsalon/app/Permission.php",
 		"/Users/liufei/php/Hairsalon/database/seeds/PermissionsSeeder.php",
 		"/Users/liufei/php/Hairsalon/vendor/symfony/routing/Symfony/Component/Routing/Tests/RouteTest.php",
 		"/Users/liufei/php/Hairsalon/vendor/laravel/framework/src/Illuminate/Routing/RouteDependencyResolverTrait.php",
 		"/Users/liufei/php/Hairsalon/resources/views/_partials/modal.blade.php",
-		"/Users/liufei/php/Hairsalon/resources/views/role/index.blade.php",
 		"/Users/liufei/php/Hairsalon/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php",
 		"/Users/liufei/php/Hairsalon/package.json",
 		"/Users/liufei/php/Hairsalon/app/Http/Controllers/Controller.php",
 		"/Users/liufei/php/Hairsalon/resources/views/home.blade.php",
-		"/Users/liufei/php/Hairsalon/app/Http/breadcrumbs.php",
 		"/Users/liufei/php/Hairsalon/resources/views/_partials/breadcrumbs.blade.php",
 		"/Users/liufei/php/Hairsalon/database/seeds/RolesAndPermissionsSeeder.php",
 		"/Users/liufei/php/Hairsalon/database/migrations/2015_03_01_111137_add_parents_to_permission_table.php",
@@ -377,18 +370,7 @@
 		"/Users/liufei/ROR/gcr_web/app/helpers/application_helper.rb",
 		"/Users/liufei/ROR/gcr_web/app/controllers/application_controller.rb",
 		"/Users/liufei/ROR/gcr_web/app/assets/javascripts/application.js",
-		"/Users/liufei/ROR/gcr_web/config/application.yml",
-		"/Users/liufei/ROR/gcr_web/config/application.rb",
-		"/Users/liufei/ROR/gcr_web/app/controllers/reservations_controller.rb",
-		"/Users/liufei/ROR/gcr_web/app/views/reservations/_form_partial.html.slim",
-		"/Users/liufei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/liufei/ROR/gcr_web/app/views/home/index.html.erb",
-		"/Users/liufei/ROR/gcr_web/app/views/layouts/_main_top.html.erb",
-		"/Users/liufei/ROR/gcr_web/app/views/reservations/_car_type.html.slim",
-		"/Users/liufei/ROR/gcr_web/app/views/reservations/_car_type_rate.html.slim",
-		"/Users/liufei/ROR/gcr_web/app/views/reservations/new.html.slim",
-		"/Users/liufei/ROR/gcr_web/app/assets/stylesheets/main.css",
-		"/Users/liufei/ROR/gcr_web/app/views/shared/_footer.html.erb"
+		"/Users/liufei/ROR/gcr_web/config/application.yml"
 	],
 	"find":
 	{
@@ -409,6 +391,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"{{$role->id}}",
 			"1",
 			"navigation",
 			"assets",
@@ -535,8 +518,7 @@
 			"sidebar",
 			"user",
 			"    \n",
-			"metro",
-			"|"
+			"metro"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -563,24 +545,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/app.php",
+					"file": "resources/views/member/index.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7577,
+						"buffer_size": 1732,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7531,
-								7531
+								350,
+								365
 							]
 						],
 						"settings":
@@ -645,224 +627,31 @@
 								"bh_unmatched_content"
 							],
 							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3721.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "composer.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 943,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								255,
-								262
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/RoleController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2657,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1558,
-								1558
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "resources/views/role/role_modal.blade.php",
+					"buffer": 1,
+					"file": "app/Http/Controllers/MemberController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2513,
+						"buffer_size": 1623,
 						"regions":
 						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										380,
-										386
-									]
-								],
-								"scope": "variable.parameter"
-							}
 						},
 						"selection":
 						[
 							[
-								2414,
-								2414
+								925,
+								925
 							]
 						],
 						"settings":
@@ -927,105 +716,104 @@
 								"bh_unmatched_content"
 							],
 							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 9.0,
-						"translation.y": 376.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resources/views/role/index.blade.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2175,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1333.0,
+						"translation.y": 618.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/member/member_new.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								915
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"is_xml": false,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 724.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1090,8 +878,16 @@
 		"selected_items":
 		[
 			[
+				"member",
+				"app/Http/Controllers/MemberController.php"
+			],
+			[
 				"route",
 				"app/Http/routes.php"
+			],
+			[
+				"routes",
+				"app/Providers/RouteServiceProvider.php"
 			],
 			[
 				"perm",
@@ -1104,10 +900,6 @@
 			[
 				"file",
 				"Libs/ThinkPHP/Library/Think/Log/Driver/File.class.php"
-			],
-			[
-				"member",
-				"App/Admin/View/Member/member_list.html"
 			],
 			[
 				"main",

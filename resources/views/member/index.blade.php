@@ -7,8 +7,17 @@
 @endsection
 @section('content')
 	
-	<button class="btn btn-primary">新增会员</button>
-	
+	<!-- <button class="btn btn-primary">新增会员</button> -->
+	<a data-target="#modal-table" data-toggle="modal" role="button" href="/members/create">
+		<button class="btn btn-xs btn-info">
+
+				<i class="icon-edit bigger-120"></i>
+			新增会员
+		</button>
+	</a>
+	<div id="modal-table" class="modal fade">
+		@include('_partials.modal')
+	</div>
 		
 	<div class="col-xs-12">
 		<div class="header smaller lighter blue">
