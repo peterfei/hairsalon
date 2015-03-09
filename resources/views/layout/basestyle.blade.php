@@ -14,10 +14,11 @@
 <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" /> -->
 
 <!-- ace styles -->
-
+@yield('css')
 <link rel="stylesheet" href="/css/ace.min.css" />
 <link rel="stylesheet" href="/css/ace-rtl.min.css" />
 <link rel="stylesheet" href="/css/ace-skins.min.css" />
+
 
 <!--[if lte IE 8]>
   <link rel="stylesheet" href="/css/ace-ie.min.css" />

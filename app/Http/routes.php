@@ -28,3 +28,9 @@ Route::get('role_permissions',['as'=>'role_permissions','uses'=>'RoleController@
 Route::get('showchart',['as'=>'showchart','uses'=>'Statistics\StatisticsController@showChart']);
 Route::get('getchartdata',['as'=>'getchartdata','uses'=>'Statistics\StatisticsController@getChartData']);
 //--------------- Start config route for statistics module ---------------//	
+
+//--------------- Start config route for settings module ---------------//
+//Route::get('showcustomattr',['as'=>'showcustomattr','uses'=>'Settings\UserSettingsController@showUserCustom']);
+Route::post('customsetting/store',['as'=>'customsetting.store','uses'=>'Settings\UserSettingsController@store']);
+Route::resource('customsetting', 'Settings\UserSettingsController');
+//--------------- Start config route for settings module ---------------//

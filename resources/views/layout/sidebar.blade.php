@@ -89,6 +89,23 @@
 								</li>
 							</ul>
 						</li>
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-bar-chart"></i>
+								<span class="menu-text"> 设置 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="/customsetting">
+										<i class="icon-double-angle-right"></i>
+										用户自定义属性
+									</a>
+								</li>
+							</ul>
+						</li>
 					</ul><!-- /.nav-list -->
 					
 

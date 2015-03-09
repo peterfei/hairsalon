@@ -29,7 +29,6 @@
 		</div><!-- /widget-body -->
 	</div><!-- /widget-box -->
 </div>
-</div>
 
 @endsection
 @section('script')

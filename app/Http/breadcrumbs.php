@@ -12,11 +12,18 @@ Breadcrumbs::register('roles', function($breadcrumbs)
     $breadcrumbs->push('角色', route('roles'),['icon' => 'angle-right']);
 });
 
-// Home > roles
+// Home > chart
 Breadcrumbs::register('showchart', function($breadcrumbs)
 {
     $breadcrumbs->parent('home');
     $breadcrumbs->push('用户消费趋势', route('showchart'),['icon' => 'angle-right']);
+});
+
+// Home > User Custom Attribute
+Breadcrumbs::register('showcustomattr', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('用户自定义属性', route('showcustomattr'),['icon' => 'angle-right']);
 });
 // // Home > Blog
 // Breadcrumbs::register('blog', function($breadcrumbs)
