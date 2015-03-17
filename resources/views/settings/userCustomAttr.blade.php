@@ -38,13 +38,13 @@ jQuery(function($) {
         height: 300,
         colNames:[' ', '', '属性组名称','属性名称','属性值', '门店'],
         colModel:[
-            {name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
+            {name:'myac', index:'', width: 80, fixed: true, sortable: false, resize: false,
                 formatter:'actions', 
                 formatoptions:{ 
                     keys:true,
-                    
-                    delOptions:{recreateForm: true, beforeShowForm : deleteBeforeShowForm, onclickSubmit: deleteSubmit},
-                    //editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
+                    delOptions:{recreateForm: true, beforeShowForm: deleteBeforeShowForm, onclickSubmit: deleteSubmit},
+                    editformbutton: true,
+                    editOptions:{closeAfterEdit: true, recreateForm: true, beforeShowForm: editBeforeShowForm, onclickSubmit: editSubmit}
                 }
             },
             {name:'id',index:'id', hidden: true},
@@ -73,7 +73,6 @@ jQuery(function($) {
             }, 0);
         },
 
-        //editurl: $path_base+"/dummy.html",//nothing is saved
         caption: "用户自定义属性",
         autowidth: true
 
@@ -83,10 +82,10 @@ jQuery(function($) {
     //jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
 
     //navButtons
-    jQuery(grid_selector).jqGrid('navGrid',pager_selector,
+    jQuery(grid_selector).jqGrid('navGrid', pager_selector,
         {   //navbar options
-            edit: true,
-            editicon : 'icon-pencil blue',
+            edit: false,
+            //editicon : 'icon-pencil blue',
             add: true,
             addicon : 'icon-plus-sign purple',
             del: true,
@@ -94,14 +93,6 @@ jQuery(function($) {
         },
         {
             //edit record form
-            //closeAfterEdit: true,
-            recreateForm: true,
-            beforeShowForm : function(e) {
-                $('#tr_attrgroup', e).hide();
-                var form = $(e[0]);
-                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
-                style_edit_form(form);
-            }
         },
         {
             //new record form
@@ -122,10 +113,11 @@ jQuery(function($) {
         {
             //delete record form
             recreateForm: true,
-            beforeShowForm : deleteBeforeShowForm,
-            onclickSubmit : deleteSubmit
+            beforeShowForm: deleteBeforeShowForm,
+            onclickSubmit: deleteSubmit
         }
     );
+
     function deleteBeforeShowForm (e) {
         var form = $(e[0]);
         if(form.data('styled')) return false;
@@ -142,6 +134,21 @@ jQuery(function($) {
         data['_token'] = "{{ csrf_token() }}";
         data['_method'] = "DELETE";
         return data;
+    }
+
+    function editBeforeShowForm (e) {
+        $('#tr_attrgroup', e).hide();
+        var form = $(e[0]);
+        form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+        style_edit_form(form);
+    }
+
+    function editSubmit (params, posdata) {
+        params.url = "/customsetting/" + posdata['grid-table_id'];
+        posdata['_token'] = "{{ csrf_token() }}";
+        posdata['_method'] = "PUT";
+        console.log(posdata);
+        return posdata
     }
 
 

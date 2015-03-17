@@ -73,21 +73,25 @@ class UserSettingsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
-		//
+		DB::table('custom_attr')->where('id', $id)
+			->update(array(
+		    'attrname' => $request->input('attrname'),
+		    'attrvalue' => $request->input('attrvalue'),
+		    'store' => $request->input('store')));
 	}
 
 	/**
 	 * Remove the specified resource from storage.
 	 *
-	 * @param  int  $id
+	 * @param  int  $ids
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($ids)
 	{
-		Clockwork::debug($id);
-		DB::table('custom_attr')->where('id', $id)->delete();
+		Clockwork::debug($ids);
+		DB::table('custom_attr')->whereIn('id', explode(',', $ids))->delete();
 	}
 
 }
