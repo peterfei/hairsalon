@@ -25,6 +25,12 @@ Breadcrumbs::register('showcustomattr', function($breadcrumbs)
     $breadcrumbs->parent('home');
     $breadcrumbs->push('用户自定义属性', route('showcustomattr'),['icon' => 'angle-right']);
 });
+Breadcrumbs::register('members', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push('会员', route('members.index'),['icon' => 'angle-right']);
+});
+
 // // Home > Blog
 // Breadcrumbs::register('blog', function($breadcrumbs)
 // {
