@@ -38,11 +38,21 @@ class UserSettingsController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		DB::table('custom_attr')->insert(array(
+		$isExist = DB::table('custom_attr')->where(array(
+			'attrgroup' => $request->input('attrgroup'), 
+			'attrname' => $request->input('attrname')))->first();
+		Clockwork::debug($isExist);
+		if ($isExist) {
+			$msg = array('success' => false, 'message' => '记录已存在');
+		} else {
+			DB::table('custom_attr')->insert(array(
 			'attrgroup' => $request->input('attrgroup'), 
 		    'attrname' => $request->input('attrname'),
 		    'attrvalue' => $request->input('attrvalue'),
 		    'store' => $request->input('store')));
+		    $msg = array('success' => true, 'message' => '添加成功');
+		}
+		return response()->json($msg);
 	}
 
 	/**

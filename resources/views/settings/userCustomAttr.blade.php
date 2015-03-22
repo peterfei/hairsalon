@@ -108,6 +108,9 @@ jQuery(function($) {
                 posdata['_token'] = "{{ csrf_token() }}";
                 console.log(posdata);
                 return posdata
+            },
+            afterSubmit: function(response, postdata) { 
+                return [response.responseJSON.success, response.responseJSON.message] 
             }
         },
         {
